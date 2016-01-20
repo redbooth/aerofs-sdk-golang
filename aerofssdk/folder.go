@@ -120,6 +120,7 @@ func (f *FolderClient) Move(newName, parentId string) error {
 	return nil
 }
 
+/* No longer supported in v1.3
 // Share and then update the folder to retrieve new SID, is_shared value
 func (f *FolderClient) Share() error {
 	err := f.APIClient.ShareFolder(f.Desc.Id)
@@ -128,3 +129,4 @@ func (f *FolderClient) Share() error {
 	}
 	return f.LoadMetadata()
 }
+*/

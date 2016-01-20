@@ -110,6 +110,7 @@ func (c *Client) DeleteFolder(folderId string, etags []string) error {
 	return err
 }
 
+/* No longer supported in v1.3
 func (c *Client) ShareFolder(folderId string) error {
 	route := strings.Join([]string{FOLDER_ROUTE, folderId, "is_shared"}, "/")
 	link := c.getURL(route, "")
@@ -122,3 +123,4 @@ func (c *Client) ShareFolder(folderId string) error {
 
 	return err
 }
+*/
